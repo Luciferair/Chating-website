@@ -1,12 +1,7 @@
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
-const io = require('socket.io')(http);/*(http, {
-    cors: {
-        origin: "http://localhost:4000",
-        methods: ["GET", "POST"]
-    }
-});*/
+const io = require('socket.io')(http);
 const path = require('path');
 const users = {};
 
